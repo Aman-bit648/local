@@ -1,0 +1,689 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 63%;
+  scroll-behavior: smooth;
+}
+body{
+  --main-color: #283526;
+  --primary-color: #888888;
+  --button-background: #4b709e;
+  --primary-button-background: #fe7649;
+  --background-color: #e2efff;
+}
+h1,
+h2{
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
+}
+h3,
+h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--main-color);
+}
+h3{
+  font-weight: 750;
+  font-size: 2.2rem;
+  line-height: 6rem;
+  text-transform: capitalize;
+}
+
+p,
+a,
+li,
+label,
+button{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--primary-color);
+}
+button{
+  transition: transform 90ms ease-in;
+}
+button:active{
+  transform: scale(0.98);
+}
+p,
+label{
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: normal;
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+li{
+  list-style: none;
+}
+button{
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  line-height: 3.6rem;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2rem;
+}
+/*---------------------------------------------------------Our Left-menu------------------------------------------------*/
+header{
+  padding:  0 20rem;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+}
+header nav .left-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+header nav .left-menu .sub-menu{
+  height: inherit;
+  display: flex;
+  margin-left: 9rem;
+}
+header nav .left-menu .sub-menu  a{
+  margin-left: 20px;
+}
+header nav .left-menu .logo a img {
+  width: 15rem;
+  height: 6rem;
+}
+header nav .left-menu .sub-menu li a{
+  font-size: 2rem;
+  text-transform: capitalize;
+  line-height: 3.6rem;
+  transition: all 0,2s;
+}
+header nav .left-menu .sub-menu li a:hover{
+  color: var(--button-background);
+}
+/*------------------------------------------------------Our right-menu-----------------------------------------------*/
+
+header nav .right-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+header nav .right-menu .sub-menu{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+}
+header nav .right-menu .sub-menu li a{
+ margin-right: 20px;
+ font-size: 2rem;
+ text-transform: capitalize;
+ cursor: pointer;
+ padding: 0.7rem 2rem;
+ border-radius: 1rem;
+ background: rgba(255, 255, 255, 0.5);
+ position: relative;
+ z-index: 8;
+}
+header nav .right-menu .sub-menu li :hover{
+  color: var(--button-background);
+}
+header nav .right-menu .sub-menu button{
+  padding: 0.5rem 2.5rem;
+  background-color: var(--button-background);
+  color: #fff;
+  position: relative;
+  z-index: 8;
+}
+header nav .right-menu .sub-menu button:hover{
+  background: #1b3d68;
+}
+                         /*--------------------------first-Style----------------------------*/
+/*-----------------------------------------------------Our Hero-Left-style-----------------------------------------------------------*/
+
+.main-hero-section{
+padding: 0 10rem 0 20rem;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10rem 0;
+}
+.main-hero-section .hero-left-section{
+width: 55%;
+height: 90vh;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+}
+.main-hero-section .hero-left-section h1{
+font-size: 6.5rem;
+width: 55rem;
+line-height: 7rem;
+margin-bottom: 4rem;
+}
+.main-hero-section .hero-left-section p{
+margin-bottom: 6rem;
+width: 44rem;
+}
+.main-hero-section .hero-left-section a img{
+width: 13.5rem;
+height: 4.5rem;
+cursor: pointer;
+display: inline-flex;
+transition: 0.5s all;
+}
+.main-hero-section .hero-left-section a img:active{
+  opacity: 0.6;
+}
+.main-hero-section .hero-left-section a .appStore{
+height: 4.8rem;
+margin-bottom: -0.4rem;
+cursor: pointer;
+margin-right: 2.5rem;
+transition: 0.5s all;
+}
+.main-hero-section .hero-left-section a .appStore:active{
+  opacity: 0.7;
+}
+/*----------------------------------------------Our hero-right-style------------------------------------------------------*/
+.main-hero-section .hero-right-section{
+height: 100vh;
+width: 45%;
+background: var(--background-color);
+position: absolute;
+top: 0;
+right: 0;
+border-radius: 90px 20px 0 90px;
+display: flex;
+justify-content:center: center;
+align-items: center;
+}
+.main-hero-section .hero-right-section a img{
+width: 67.7rem;
+height: 63rem;
+position: relative;
+right: 16.5rem;
+top: 2rem;
+}
+                    /*------------------------------Our second-style---------------------------------------*/
+/*-----------------------------------------------------App left-style--------------------------------------------------------*/
+.app-section{
+padding: 0 20rem;
+width: 100%;
+height: 70rem;
+display: flex;
+justify-content:space-between;
+align-items: center;
+}
+.app-section .app-left-style{
+width: 50%;
+height: inherit;
+}
+figure{
+width: 20rem;
+height: 65rem;
+background-color: var(--background-color);
+border-radius: 2rem;
+}
+.app-section .app-left-style img{
+width: 45rem;
+height: 60rem;
+border-radius: 2rem;
+margin-left: 10rem;
+margin-top: 2.5rem;
+}
+/*-------------------------------------------------------App right-style-----------------------------------------------------*/
+
+#second-section .app-right-style{
+  position: relative;
+  left: 15rem;
+}
+.app-section .app-right-style{
+width: 50%;
+height: inherit;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+margin-left: 5rem;
+}
+.app-section .app-right-style h2{
+width: 40rem;
+font-size: 5.5rem;
+font-weight: bold;
+font-style: normal;
+line-height: 6.3rem;
+text-transform: capitalize;
+margin-bottom: 3rem;
+}
+.app-section .app-right-style p{
+width: 40rem;
+height: 9rem;
+margin-bottom: 2.8rem;
+}
+.app-section .app-right-style .first-button{
+padding: 1rem 3rem;
+background-color: var(--primary-button-background);
+color: #fff;
+margin-right: 2rem;
+}
+.app-section .app-right-style .first-button:hover{
+background-color: #cc491d;
+color: #fff;
+}
+.app-section .app-right-style .last-button:hover{
+background-color: var(--primary-button-background);
+color: #fff;
+}
+
+                    /*----------------------------------Our third-style---------------------------------------*/
+/*-------------------------------------------------------task-style---------------------------------------------------------------*/
+.requirement-section{
+  padding: 3rem 20rem 3rem 15rem;
+  width: 100%;
+  height: 65rem;
+  background: var(--background-color);
+}
+.requirement-section h2{
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-top: 4rem
+}
+.requirement-section p{
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 43rem;
+  height: 9rem;
+  margin: auto;
+  font-size: 1.5rem;
+}
+.requirement-section .task-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 4rem;
+}
+.requirement-section .task-section p{
+  width: 38rem;
+}
+.requirement-section .task-section .task-1,
+.requirement-section .task-section .task-2,
+.requirement-section .task-section .task-3{
+  padding-top: 2rem;
+  text-align: center;
+  border-radius: 2rem;
+  transition: all 0.3 linear;
+}
+.requirement-section .task-section img{
+  height: 15rem;
+  width: 15rem;
+  text-align: center;
+  transition: all 1s;
+}
+.requirement-section .task-section img:hover{
+  transform: rotate(360deg);
+}
+.requirement-section .task-section h3,
+.requirement-section .task-section h3,
+.requirement-section .task-section h3{
+   font-size: 2.5rem;
+   text-transform: capitalize;
+   margin-top: 2rem;
+}
+.requirement-section .task-section .task-3{
+  background: #fff;
+  box-shadow: 0rem 0.4rem 2rem #888888;
+}
+.requirement-section .task-section .task-1:hover,
+.requirement-section .task-section .task-2:hover{
+  background: #fff;
+  box-shadow: 0rem 0.4rem 2rem #888888;
+}
+                   /*------------------------------Our fourth-style---------------------------------------*/
+/*----------------------------------------------------requirement-style-----------------------------------------------------------*/
+#fourth-section{
+  position: relative;
+  right: 5rem;
+}
+
+#fourth-section .app-right-style h2{
+width: 50rem;
+}
+#fourth-section .app-left-style img{
+height: 60rem;
+width: 60rem;
+}
+                  /*------------------------------Our Fifth-style---------------------------------------*/
+/*-------------------------------------------------------goals-style---------------------------------------------------------------*/
+#fifth-section .app-left-style img{
+margin-left: 0;
+}
+#fifth-section .app-right-style{
+justify-content: flex-start;
+margin-top: 4rem;
+margin-left: 20rem;
+}
+#fifth-section .app-right-style h2{
+width: 50rem;
+font-weight: 900;
+font-size: 4rem;
+line-height: 5.3rem;
+}
+#fifth-section .app-right-style h3{
+text-transform: none;
+}
+#fifth-section .app-right-style p{
+font-size: 1.6rem;
+width: 50rem;
+height: 3rem;
+}
+#fifth-section .app-right-style .fa-heart{
+color: red;
+}
+               /*--------------------------------------sixth-section------------------------------------*/
+/*-------------------------------------------------------connect-left-style---------------------------------------------------------*/
+.connect-section{
+  padding: 0 20rem;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.connect-section .left-section{
+  width: 50%;
+}
+.connect-section .left-section h2{
+  width: 30rem;
+  line-height: 150%;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.connect-section .left-section p{
+ width: 35rem;
+}
+/*----------------------------------------------right-section-----------------------------------------------------------*/
+.connect-section .right-section{
+  margin-top: 1rem;
+  margin-left: 10rem;
+}
+.connect-section .right-section .text1 input{
+  display: flex;
+  flex-direction: row;
+  padding: 1.1rem 10rem 1.1rem 1rem;
+  margin: 0 1.5rem 3rem 0;
+}
+.connect-section .right-section .text1,
+.connect-section .right-section .text2{
+ display: flex;
+}
+.connect-section .right-section .text1 input,
+.connect-section .right-section .text2 input{
+  padding: 1.1rem 10rem 1.1rem 1rem;
+  margin: 0 1.5rem 3rem 0;
+}
+.connect-section .right-section .text3 input{
+  display: flex;
+  padding: 1.1rem 38.5rem 1.1rem 1rem;
+  margin: 0 0 3rem 0;
+}
+.connect-section .right-section label{
+  width: 40rem;
+}
+.connect-section .right-section button{
+  padding: 0 25.5rem;
+  margin-top: 2rem;
+  background: var(--primary-button-background);
+  color: #fff;
+  transition: transform 80ms ease-in;
+}
+.connect-section .right-section button:active{
+  transform: scale(0.95);
+}
+
+            /*--------------------------------------seventh-section-----------------------------------------*/
+/*------------------------------------------------------footer-style----------------------------------------------------------*/
+footer{
+  padding: 5rem 20rem;
+  width: 100%;
+  height: auto;
+  background: var(--background-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-section .footer-icon  img{
+  width: 13rem;
+  height: 5.5rem;
+}
+.footer-section .footer-icon p{
+  font-size: 1.6rem;
+}
+.footer-section .footer-menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-section .footer-menu div{
+  margin: 0 1.3rem;
+}
+.footer-section .footer-menu a{
+  display:flex;
+  flex-direction:column;
+  font-size: 1.6rem;
+  font-weight: 530;
+  line-height: 170%;
+}
+.footer-section .footer-menu .menu4 p{
+     font-size: 1.3rem;
+     font-weight: 550;
+     line-height: 170%;
+     margin-bottom: 0.8rem;
+}
+.footer-section .footer-menu .menu4 input{
+  padding: 1.3rem 2.2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+}
+.footer-section .footer-menu .menu1,
+.footer-section .footer-menu .menu2,
+.footer-section .footer-menu .menu3,
+.footer-section .footer-menu .menu4{
+  position: relative;
+  left:5.5rem;
+
+}
+                      /*--------------------------------eight-section----------------------------------*/
+/*-------------------------------------------------------media-style----------------------------------------------------------*/
+.media-section{
+  position: fixed;
+  top: 40%;
+  transform: rotateY(-50%);
+  z-index: 10;
+}
+.media-section a{
+  width: 18rem;
+  font-size: 1.7rem;
+  background: var(--button-background);
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.6rem;
+  transition: 0.5s all linear;
+  transform: translateX(-14.5rem);
+}
+.media-section a:hover{
+  transform: translateX(0);
+}
+.media-section .fab{
+  padding-left: 1rem;
+  font-size: 3rem;
+  animation: 2s linear ;
+  animation-iteration-count: infinite;
+  animation-name: animate;
+  animation-direction: alternate;
+}
+
+@keyframes animate{
+  from{
+    transform: scale(0.9);
+  }to{
+    transform: scale(1.05);
+  }
+}
+.media-section .facebook{
+  background: var(--button-background);
+}
+.media-section .telegram{
+  background: #00aced;
+}
+.media-section .instagram{
+  background: #e4405f;
+}
+.media-section .linkedin{
+  background: #0077b5;
+}
+.media-section .youtube{
+  background: #cd201f;
+}
+
+/*----------------------------------------------Responsive Layout start-------------------------------------------------------*/
+                       /*-----------------------mobile-layout-----------------------------*/
+/*@media query (max-width:770px){
+
+  header,
+  .main-hero-section,
+  .app-section{
+    padding: 0 5rem;
+  }
+ #fourth-section,
+ #fifth-section,
+ #sixth-section,
+ #seventh-section{
+   position: relative;
+   right: 15rem;
+ }
+}*/
+
+@media (max-width: 770px) {
+  header,
+  .main-hero-section,
+  .app-section {
+    padding: 0 5rem;
+  }
+
+  header nav {
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  header nav .left-menu {
+    width: 100%;
+    display: block;
+    order: 2;
+  }
+
+  header nav .left-menu img {
+    display: block;
+    width: 100%;
+  }
+
+  header .left-menu .sub-menu {
+    width: 100%;
+    display: block;
+  }
+
+  header nav .left-menu .sub-menu a {
+    margin-right: 2rem;
+  }
+
+  header nav .left-menu .sub-menu a li {
+    font-size: 1.7rem;
+  }
+
+  header nav .right-menu {
+    width: 100%;
+    order: 1;
+  }
+
+  header nav .right-menu .sub-menu a {
+    width: 10rem;
+    height: 3.5rem;
+    border: 0.1rem solid var(--main-color);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  header nav .righ-menu .sub-menu a li {
+    font-size: 1.5rem;
+    margin-right: 0;
+    text-transform: uppercase;
+  }
+
+  header nav .right-menu .sub-menu button {
+    width: 13rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  /* hero section css style  */
+  .main-hero-section {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .main-hero-section .hero-left-section {
+    order: 2;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .main-hero-section .hero-left-section h1 {
+    width: 35rem;
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-hero-section .hero-left-section p {
+    width: 35rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .main-hero-section .hero-right-section {
+    order: 1;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: transparent;
+  }
+
+  .main-hero-section .hero-right-section img {
+    width: 35rem;
+    height: 35rem;
+    margin: 0;
+    margin-top: 4rem;
+    margin-left: 30rem;
+  }
+}
